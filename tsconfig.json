@@ -1,28 +1,25 @@
 {
     "compilerOptions": {
-        "noImplicitAny": true,
-        "outDir": "./build",
-        "target": "es2018",
-        "alwaysStrict":true,
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true,
-        "noFallthroughCasesInSwitch":true,
-        "noUnusedLocals":true,
-        "noUnusedParameters":true,
-        "pretty": true,
-        "skipLibCheck": true,
-        "esModuleInterop": true,
-        "moduleResolution": "node",
-        "module": "commonjs",
-        "resolveJsonModule": true,
-        "downlevelIteration": true
+      "target": "ESNext",
+      "lib": ["DOM", "DOM.Iterable", "ESNext"],
+      "types": ["vite/client", "node"],
+      "allowJs": false,
+      "skipLibCheck": true,
+      "esModuleInterop": false,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true,
+      "jsx": "preserve",
+      "baseUrl": "./",
+      "paths": {
+        "~/*": ["src/*"]
+      }
     },
-    "include": [
-        "./src/**/*"
-    ]
-    ,
-    "exclude": [
-        "./build",
-        "node_modules"
-    ]
-}
+    "include": ["./src"],
+    "exclude": ["node_modules"]
+  }
