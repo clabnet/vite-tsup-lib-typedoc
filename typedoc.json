@@ -1,0 +1,8 @@
+{
+    "entryPoints": ["src/main.ts"],
+    "out": "docs",
+    "readme": "README.md",
+    "cleanOutputDir": false,
+    "name": "vite-tsup-lib-typedoc documentation",
+    "tsconfig": "./tsconfig.json"
+}
